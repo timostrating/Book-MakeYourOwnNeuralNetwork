@@ -34,8 +34,17 @@ The process of classifications is nothing else then finding the blue line above.
 ![diagram 1](/img/diagram-2.png)
 
 
-<!-- ### 1.4 Training A Simple Classifier
-### 1. 5 Sometimes One Classifier Is Not Enough 
+### 1.4 Training A Simple Classifier
+A basic liniear classifier works by defining the best liniear function posible. The simpelest form of a linear function is: ```y = Ax + B```
+To get linear function closer we look at the error. E = error = (desired target ­ actual output). Based on this error we can make a small change in A.
+```ΔA = E / x```
+The only problem with this expression is that 1 example that could lead our model in the wrong direction. So we introduce a learning Rate L=0.5.
+```ΔA = L (E / x )```
+
+Training examples from the real world are most of the time noisy or contain errors. To correct for this we moderate
+updates to limits the impact of these false examples. All data should be valued equaly. Data that is added later should not change the classifier more than the data that could be added from the beginning.
+
+<!-- ### 1. 5 Sometimes One Classifier Is Not Enough 
 ### 1. 6 Neurons, Nature’s Computing Machines 
 ### 1. 7 Following Signals Through A Neural Network 
 ### 1. 8 Matrix Multiplication is Useful .. Honest! 
