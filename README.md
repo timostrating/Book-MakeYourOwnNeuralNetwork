@@ -31,7 +31,7 @@ We now know that the exact process is in between x0.59 and x0.60. The more quess
 
 The process of classifications is nothing else then finding the blue line above. In the case we have a new point we can look at the line. By looking at it we know at what side it is and we can say that it will than probably be in the catecory that we classified above the line.
 
-![diagram 1](/img/diagram-2.png)
+![diagram 2](/img/diagram-2.png)
 
 
 ### 1.4 Training A Simple Classifier
@@ -44,9 +44,27 @@ The only problem with this expression is that 1 example that could lead our mode
 Training examples from the real world are most of the time noisy or contain errors. To correct for this we moderate
 updates to limits the impact of these false examples. All data should be valued equaly. Data that is added later should not change the classifier more than the data that could be added from the beginning.
 
-<!-- ### 1. 5 Sometimes One Classifier Is Not Enough 
-### 1. 6 Neurons, Nature’s Computing Machines 
-### 1. 7 Following Signals Through A Neural Network 
+### 1. 5 Sometimes One Classifier Is Not Enough 
+
+| Input A | Input B | Logical AND | Logical OR | Logical XOR |
+| :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 0 |
+
+So as you can see is it not possible to seperate the xor by using 1 line. It is only possible by using multiple lines.
+![](https://i.imgur.com/gwoz9tn.png)
+
+### 1. 6 Neurons, Nature’s Computing Machines
+Neuons in your brain already have a properlty like this that is really usefull. Every neuron is corrected to many other neurons. When there is a signal coming in your brain, think about you see something, some neurons will recieve a electirc charge / signal if there enaugh other neurons sending signals to a other neuron then the neuron will switch to sending signals to. Think about getting hungery. Most of the time you are not hongy but suddenly you can get it. This happends because more neurons started sending signals to the neuron that desids if you feel hungry or not and this neuron switched.
+![](https://i.imgur.com/AxbRkRr.png)
+We can visualise this like a diagram
+![](https://i.imgur.com/KhAEIyL.png)
+We will give all the connections in the diagram a special notation.
+![](https://i.imgur.com/8GRax8b.png)
+
+<!-- ### 1. 7 Following Signals Through A Neural Network 
 ### 1. 8 Matrix Multiplication is Useful .. Honest! 
 ### 1. 9 A Three Layer Example with Matrix Multiplication 
 ### 1. 10 Learning Weights From More Than One Node 
